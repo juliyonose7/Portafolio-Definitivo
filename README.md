@@ -1,2 +1,2 @@
 # Portafolio-Definitivo
-Portatafolio que integra backend y frontend
+Portafolio que integra backend y frontend
