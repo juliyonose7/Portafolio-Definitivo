@@ -1,6 +1,6 @@
 # Portafolio Aero (Negro/Azul)
 
-Sitio web moderno tipo portafolio con estética aero negra con acentos azules. Integra la API pública de GitHub para listar repositorios de un usuario.
+Sitio web moderno tipo portafolio con estética aero negra con acentos azules. Integra la API pública de GitHub para listar repositorios de un usuario y usa  API REST en AWS con Lambda + Gateway
 
 ## Características
 - UI oscura con vidrio/blur y brillos azules
@@ -25,3 +25,4 @@ Se usa `GET https://api.github.com/users/:user/repos?per_page=100&sort=updated`.
 
 ## Licencia
 MIT
+
