@@ -1,0 +1,138 @@
+[
+  {
+    "nombre": "Tupac Shakur (2Pac)",
+    "biografia": "American rapper, actor, and activist. One of the most influential rappers of all time, known for his music addressing contemporary social issues and his passionate activism.",
+    "epoca": "20th Century (1971-1996)",
+    "citas": [
+      "I'm not saying I'm gonna change the world, but I guarantee that I will spark the brain that will change the world.",
+      "Reality is wrong. Dreams are for real.",
+      "Only God can judge me.",
+      "I see no changes. All I see is racist faces.",
+      "Death is not the greatest loss in life. The greatest loss is what dies inside while you live.",
+      "Behind every sweet smile, there is a bitter sadness that no one can ever see and feel.",
+      "You can spend minutes, hours, days, weeks, or even months over-analyzing a situation; trying to put the pieces together, justifying what could've, would've happened... or you can just leave the pieces on the floor and move the fuck on.",
+      "Don't change on me. Don't extort me unless you intend to do it forever.",
+      "I'm a reflection of the community.",
+      "Even the good need to rest."
+    ]
+  },
+  {
+    "nombre": "Carl Sagan",
+    "biografia": "American astronomer, cosmologist, astrophysicist, astrobiologist, author, and science communicator. Best known for his work as a science communicator and his contributions to the scientific research of extraterrestrial life.",
+    "epoca": "20th Century (1934-1996)",
+    "citas": [
+      "Somewhere, something incredible is waiting to be known.",
+      "We are a way for the cosmos to know itself.",
+      "The cosmos is within us. We are made of star-stuff.",
+      "Extraordinary claims require extraordinary evidence.",
+      "For small creatures such as we the vastness is bearable only through love.",
+      "The absence of evidence is not evidence of absence.",
+      "One of the saddest lessons of history is this: If we've been bamboozled long enough, we tend to reject any evidence of the bamboozle.",
+      "Science is not only compatible with spirituality; it is a profound source of spirituality.",
+      "It is far better to grasp the universe as it really is than to persist in delusion, however satisfying and reassuring.",
+      "We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology."
+    ]
+  },
+  {
+    "nombre": "Linus Torvalds",
+    "biografia": "Finnish-American software engineer who is the creator and principal developer of the Linux kernel. He also created the distributed version control system Git.",
+    "epoca": "20th-21st Century (1969-present)",
+    "citas": [
+      "Talk is cheap. Show me the code.",
+      "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.",
+      "Software is like sex: it's better when it's free.",
+      "Intelligence is the ability to avoid doing work, yet getting the work done.",
+      "Bad programmers worry about the code. Good programmers worry about data structures and their relationships.",
+      "See, you not only have to be a good coder to create a system like Linux, you have to be a sneaky bastard too.",
+      "Any program is only as good as it is useful.",
+      "Given enough eyeballs, all bugs are shallow.",
+      "I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu).",
+      "My name is Linus, and I am your God."
+    ]
+  },
+  {
+    "nombre": "Ridley Scott",
+    "biografia": "British film director and producer. Known for directing science fiction, crime, and historical drama films including Alien, Blade Runner, Gladiator, and The Martian.",
+    "epoca": "20th-21st Century (1937-present)",
+    "citas": [
+      "Life is not a dress rehearsal. Get on with it.",
+      "On every film I am the audience.",
+      "I'm a commercial director. So, if you can't get the opening of the film right, you're in trouble.",
+      "Storyboards are fundamental. They are the blueprint of the movie.",
+      "I'm a visualist. I think first in pictures.",
+      "I don't do 'message' movies. I'm an entertainer.",
+      "You have to be a gladiator; you have to be relentless.",
+      "The danger is in the anticipation.",
+      "I love creating worlds.",
+      "Every shot is a statement."
+    ]
+  },
+  {
+    "nombre": "Isaac Asimov",
+    "biografia": "American writer and professor of biochemistry at Boston University. Best known for his hard science fiction works, including the Foundation series and the Robot series.",
+    "epoca": "20th Century (1920-1992)",
+    "citas": [
+      "The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom.",
+      "I do not fear computers. I fear the lack of them.",
+      "Violence is the last refuge of the incompetent.",
+      "Never let your sense of morals get in the way of doing what's right.",
+      "The most exciting phrase to hear in science, the one that heralds new discoveries, is not 'Eureka!' but 'That's funny...'",
+      "Life is pleasant. Death is peaceful. It's the transition that's troublesome.",
+      "If knowledge can create problems, it is not through ignorance that we can solve them.",
+      "Writing, to me, is simply thinking through my fingers.",
+      "Self-education is, I firmly believe, the only kind of education there is.",
+      "People who think they know everything are a great annoyance to those of us who do."
+    ]
+  },
+  {
+    "nombre": "Galileo Galilei",
+    "biografia": "Italian astronomer, physicist and engineer, sometimes described as a polymath, from Pisa. Known as the father of observational astronomy, modern physics, and scientific method.",
+    "epoca": "16th-17th Century (1564-1642)",
+    "citas": [
+      "Mathematics is the language in which God has written the universe.",
+      "All truths are easy to understand once they are discovered; the point is to discover them.",
+      "I have never met a man so ignorant that I couldn't learn something from him.",
+      "You cannot teach a man anything; you can only help him find it within himself.",
+      "In questions of science, the authority of a thousand is not worth the humble reasoning of a single individual.",
+      "Measure what is measurable, and make measurable what is not so.",
+      "Wine is sunlight, held together by water.",
+      "Yet it moves. (E pur si muove.)",
+      "I do not feel obliged to believe that the same God who has endowed us with sense, reason, and intellect has intended us to forgo their use.",
+      "The sun, with all those planets revolving around it and dependent on it, can still ripen a bunch of grapes as if it had nothing else in the universe to do."
+    ]
+  },
+  {
+    "nombre": "Antonino Zichichi",
+    "biografia": "Italian physicist who has worked in the field of nuclear physics. He has served as president of the World Federation of Scientists and is known for his work on antimatter.",
+    "epoca": "20th-21st Century (1929-present)",
+    "citas": [
+      "Science is the only tool we have to read the Book of Nature.",
+      "Without the cultural dimension, science is blind.",
+      "The Big Bang is not the beginning of the universe, but the boundary where our knowledge ends.",
+      "God is not a magician. The laws of nature are the foundation of reality.",
+      "It is anti-scientific to think that Science can demonstrate the non-existence of God.",
+      "The true scientist is never certain.",
+      "The universe is not a chaos but a cosmos, governed by precise mathematical laws.",
+      "To understand the subatomic world, we need more than physics; we need metaphysics.",
+      "Beauty and elegance are fundamental criteria for a scientific theory.",
+      "Technology is applied science; science is discovered technology."
+    ]
+  },
+  {
+    "nombre": "Donald Knuth",
+    "biografia": "American computer scientist, mathematician, and professor emeritus at Stanford University. Known as the 'father of the analysis of algorithms' and author of The Art of Computer Programming.",
+    "epoca": "20th-21st Century (1938-present)",
+    "citas": [
+      "Premature optimization is the root of all evil.",
+      "Science is what we understand well enough to explain to a computer. Art is everything else we do.",
+      "Beware of bugs in the above code; I have only proved it correct, not tried it.",
+      "The best programs are written so that computing machines can perform them quickly and so that human beings can understand them clearly.",
+      "Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.",
+      "An algorithm must be seen to be believed.",
+      "I can't go to a restaurant and order food because I keep looking at the fonts on the menu.",
+      "Email is a wonderful thing for people whose role in life is to be on top of things. But not for me; my role is to be on the bottom of things.",
+      "Programming is the art of telling another human being what one wants the computer to do.",
+      "Think twice, code once."
+    ]
+  }
+]

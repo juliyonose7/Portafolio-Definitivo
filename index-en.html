@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0f1a" />
+    <meta name="description" content="Professional portfolio of a computer engineer." />
+    <title>Portfolio | Julian Cardenas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="api-config.js"></script>
+</head>
+<body>
+    <div class="bg-effects" aria-hidden="true">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Language Transition Effects -->
+    <div class="page-transition">
+        <div class="pixel-grid"></div>
+    </div>
+    
+    <div class="language-transition-overlay">
+        <div class="snake-transition-container">
+            <canvas class="snake-canvas" width="800" height="600"></canvas>
+            <div class="transition-content">
+                <div class="transition-spinner"></div>
+                <p class="transition-text">Switching language...</p>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Main">
+            <a class="brand" href="#home" aria-label="Go to home">My Portfolio</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Open menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul id="primary-menu" class="menu">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Social Networks</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="es" aria-label="Cambiar a español">
+                    <img src="assets/SN/ESPANOL.png" alt="Español" class="flag-icon">
+                    <span>ES</span>
+                </button>
+                <button class="lang-btn active" data-lang="en" aria-label="Switch to English">
+                    <img src="assets/SN/INGLES.png" alt="English" class="flag-icon">
+                    <span>EN</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home" class="container">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-bg-effects" aria-hidden="true">
+                <svg class="crayon-line" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice">
+                    <path class="crayon-path" d="M20,100 Q100,60 200,100 T380,100" stroke="#5ad2ff" stroke-width="3" fill="none" opacity="0.6"/>
+                    <path class="crayon-path crayon-path-2" d="M20,120 Q150,90 300,120 T380,120" stroke="#2e73ff" stroke-width="2" fill="none" opacity="0.4"/>
+                    <path class="crayon-path crayon-path-3" d="M20,80 Q120,50 240,80 T380,80" stroke="#5ad2ff" stroke-width="2.5" fill="none" opacity="0.5"/>
+                    <path class="crayon-path crayon-path-4" d="M20,140 Q80,110 160,140 T320,140 T380,140" stroke="#7bb3ff" stroke-width="1.8" fill="none" opacity="0.3"/>
+                    <path class="crayon-path crayon-path-5" d="M20,60 Q200,30 380,60" stroke="#4a9eff" stroke-width="2.2" fill="none" opacity="0.4"/>
+                    <path class="crayon-path crayon-path-6" d="M20,160 Q120,130 240,160 T380,160" stroke="#6ba6ff" stroke-width="1.5" fill="none" opacity="0.35"/>
+                    <path class="crayon-path crayon-path-7" d="M20,40 Q160,20 320,40 T380,40" stroke="#3d8bff" stroke-width="1.2" fill="none" opacity="0.25"/>
+                    <path class="crayon-path crayon-path-8" d="M20,180 Q100,150 200,180 T380,180" stroke="#8bc5ff" stroke-width="1.8" fill="none" opacity="0.3"/>
+                </svg>
+            </div>
+            <div class="hero-content card">
+                <h1 id="hero-title" class="gradient-text gradient-animated">Julian Cardenas</h1>
+                <p class="subtitle reveal-animated">Backend development powered by LLMs, Trust & Safety, Cybersecurity, Network Engineering, IT Law.
+                </p>
+            </div>
+        </section>
+
+        <section id="about" class="section card about-section-with-partial-border" aria-labelledby="about-title">
+            <h2 id="about-title">About Me</h2>
+            <p>
+                I am an Informatics Engineering student with a practical focus on cybersecurity and computer science. I enjoy mixing Backend development with Network Engineering and phishing threat analysis on surface and dark web. For training and learning, I use Linux tools in my practices and leverage AI to automate and improve my productivity in backend projects and scripts both in Linux commands and Python. I am characterized by learning quickly, while documenting the difficulties I encounter and seeking practical solutions to both work and academic problems. I am not afraid to redo something from scratch to better understand it and I believe that there is always something new to learn.
+            </p>
+            <div class="profile-photo-container">
+                <img src="assets/SN/profile-photo.jpg" alt="Julian Cardenas - Profile photo" class="profile-photo">
+            </div>
+        </section>
+
+        <section id="skills" class="section" aria-labelledby="skills-title">
+            <h2 id="skills-title">Skills</h2>
+            <div class="skills-crayon-canvas" aria-hidden="true">
+                <svg class="skills-crayon-svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+                    <!-- Crayon lines will be drawn here dynamically -->
+                </svg>
+            </div>
+            <div class="skills-container">
+                <div class="skills-section hard-skills">
+                    <h3>Hard Skills</h3>
+                    <ul class="skills">
+                        <li class="skill-item">
+                            <div class="skill-icons">
+                                <img src="assets/javascript.png" alt="JavaScript" class="skill-icon">
+                                <img src="assets/javascript (2).png" alt="JavaScript" class="skill-icon skill-icon-2">
+                            </div>
+                            <span class="skill-text">JavaScript</span>
+                            <div class="skill-gif">
+                                <img src="assets/GIFS/javascript.gif" alt="JavaScript Animation" class="gif-animation">
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icons">
+                                <img src="assets/java.png" alt="JAVA" class="skill-icon">
+                                <img src="assets/JAVA (2).png" alt="JAVA" class="skill-icon skill-icon-2">
+                            </div>
+                            <span class="skill-text">JAVA</span>
+                            <div class="skill-gif">
+                                <img src="assets/GIFS/java.gif" alt="JAVA Animation" class="gif-animation">
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icons">
+                                <img src="assets/ingenieria de redes (1).png" alt="Network Engineering" class="skill-icon">
+                                <img src="assets/ingenieria de redes (2).png" alt="Network Engineering" class="skill-icon skill-icon-2">
+                            </div>
+                            <span class="skill-text">Network Engineering</span>
+                            <div class="skill-gif">
+                                <img src="assets/GIFS/network engineering.gif" alt="Network Engineering Animation" class="gif-animation">
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icons">
+                                <img src="assets/python.png" alt="Python" class="skill-icon">
+                                <img src="assets/python (2).png" alt="Python" class="skill-icon skill-icon-2">
+                            </div>
+                            <span class="skill-text">Python</span>
+                            <div class="skill-gif">
+                                <img src="assets/GIFS/python.gif" alt="Python Animation" class="gif-animation">
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icons">
+                                <img src="assets/FUNDAMENTOS en sql y xml (2).png" alt="SQL and XML Fundamentals" class="skill-icon">
+                                <img src="assets/FUNDAMENTOS en sql y xml (3).png" alt="SQL and XML Fundamentals" class="skill-icon skill-icon-2">
+                            </div>
+                            <span class="skill-text">DB Handling with SQL and XML</span>
+                            <div class="skill-gif">
+                                <img src="assets/GIFS/sql xml.gif" alt="SQL XML Animation" class="gif-animation">
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icons">
+                                <img src="assets/TRUST AND SAFETY (1).png" alt="Trust & Safety" class="skill-icon">
+                                <img src="assets/TRUST AND SAFETY (2).png" alt="Trust & Safety" class="skill-icon skill-icon-2">
+                            </div>
+                            <span class="skill-text">Trust & Safety // Compliance</span>
+                            <div class="skill-gif">
+                                <img src="assets/GIFS/tys.gif" alt="Trust & Safety Animation" class="gif-animation">
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icons">
+                                <img src="assets/ciberseguridad (3).png" alt="Cybersecurity" class="skill-icon">
+                                <img src="assets/ciberseguridad (4).png" alt="Cybersecurity" class="skill-icon skill-icon-2">
+                            </div>
+                            <span class="skill-text">Cybersecurity</span>
+                            <div class="skill-gif">
+                                <img src="assets/GIFS/ciberseguridad.gif" alt="Cybersecurity Animation" class="gif-animation">
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icons">
+                                <img src="assets/DERECHO INFORMATICO.png" alt="IT Law" class="skill-icon">
+                                <img src="assets/derecho informatico (2).png" alt="IT Law" class="skill-icon skill-icon-2">
+                            </div>
+                            <span class="skill-text">IT Law</span>
+                            <div class="skill-gif">
+                                <img src="assets/GIFS/derecho informatico.gif" alt="IT Law Animation" class="gif-animation">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills-section soft-skills">
+                    <h3>Soft Skills</h3>
+                    <ul class="skills">
+                        <li class="skill-item">
+                            <div class="skill-icons">
+                                <img src="assets/trabajo bajo presion.png" alt="Work under pressure" class="skill-icon">
+                                <img src="assets/trabajo bajo presion (2).png" alt="Work under pressure" class="skill-icon skill-icon-2">
+                            </div>
+                            <span class="skill-text">Work under pressure</span>
+                            <div class="skill-gif">
+                                <img src="assets/GIFS/trabajo bajo presion.gif" alt="Work under pressure Animation" class="gif-animation">
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icons">
+                                <img src="assets/COMUNICACION EFECTIVA (1).png" alt="Effective communication" class="skill-icon">
+                                <img src="assets/COMUNICACION EFECTIVA (2).png" alt="Effective communication" class="skill-icon skill-icon-2">
+                            </div>
+                            <span class="skill-text">Effective communication</span>
+                            <div class="skill-gif">
+                                <img src="assets/GIFS/comunicacion efectiva.gif" alt="Effective communication Animation" class="gif-animation">
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icons">
+                                <img src="assets/RESOLUCION DE PROBLEMAS (1).png" alt="Problem solving" class="skill-icon">
+                                <img src="assets/RESOLUCION DE PROBLEMAS (2).png" alt="Problem solving" class="skill-icon skill-icon-2">
+                            </div>
+                            <span class="skill-text">Problem solving</span>
+                            <div class="skill-gif">
+                                <img src="assets/GIFS/resolucion de problemas.gif" alt="Problem solving Animation" class="gif-animation">
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icons">
+                                <img src="assets/trabajo en equipo (1).png" alt="Teamwork" class="skill-icon">
+                                <img src="assets/trabajo en equipo (2).png" alt="Teamwork" class="skill-icon skill-icon-2">
+                            </div>
+                            <span class="skill-text">Teamwork</span>
+                            <div class="skill-gif">
+                                <img src="assets/GIFS/trabajo en equipo.gif" alt="Teamwork Animation" class="gif-animation">
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icons">
+                                <img src="assets/adaptabilidad (1).png" alt="Adaptability" class="skill-icon">
+                                <img src="assets/adaptabilidad (2).png" alt="Adaptability" class="skill-icon skill-icon-2">
+                            </div>
+                            <span class="skill-text">Adaptability</span>
+                            <div class="skill-gif">
+                                <img src="assets/GIFS/adaptabilidad.gif" alt="Adaptability Animation" class="gif-animation">
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icons">
+                                <img src="assets/pensamiento critico (1).png" alt="Critical thinking" class="skill-icon">
+                                <img src="assets/pensamiento critico (2).png" alt="Critical thinking" class="skill-icon skill-icon-2">
+                            </div>
+                            <span class="skill-text">Critical thinking</span>
+                            <div class="skill-gif">
+                                <img src="assets/GIFS/pensamiento-critico (1).gif" alt="Critical thinking Animation" class="gif-animation">
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icons">
+                                <img src="assets/analisis(1).png" alt="Analysis" class="skill-icon">
+                                <img src="assets/analisis(2).png" alt="Analysis" class="skill-icon skill-icon-2">
+                            </div>
+                            <span class="skill-text">Analysis</span>
+                            <div class="skill-gif">
+                                <img src="assets/GIFS/analisis.gif" alt="Analysis Animation" class="gif-animation">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <div class="section-header">
+                <h2 id="projects-title">Projects</h2>
+                <div class="repo-filters">
+                    <label for="language-filter">Language</label>
+                    <select id="language-filter">
+                        <option value="">All</option>
+                    </select>
+                </div>
+            </div>
+            <div id="repos" class="repo-grid" role="list" aria-live="polite" aria-busy="false"></div>
+            <div id="repos-empty" class="empty-state" hidden>No repositories to show.</div>
+        </section>
+
+        <section id="contact" class="section card" aria-labelledby="contact-title">
+            <h2 id="contact-title" style="text-align: center;">My social networks</h2>
+            <div class="socials" role="list">
+                <a id="github-profile-link" class="social-link" href="https://github.com/juliyonose7" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
+                        <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.36-1.32-1.72-1.32-1.72-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.83 2.79 1.3 3.46.99.11-.78.41-1.3.74-1.6-2.67-.3-5.48-1.34-5.48-5.95 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.64.24 2.86.12 3.16.77.84 1.24 1.91 1.24 3.22 0 4.62-2.81 5.64-5.49 5.94.42.37.79 1.1.79 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .5Z"/>
+                    </svg>
+                    <span class="sr-only">GitHub</span>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/julicardenas" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
+                        <path d="M20.45 20.45h-3.56v-5.6c0-1.34-.02-3.07-1.87-3.07-1.87 0-2.15 1.46-2.15 2.97v5.7H9.31V9h3.42v1.56h.05c.48-.9 1.66-1.85 3.41-1.85 3.65 0 4.33 2.4 4.33 5.52v6.22ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/>
+                    </svg>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+                <a class="social-link" href="https://www.credly.com/users/julian-david-cardenas-guevara/badges#credly" target="_blank" rel="noopener" aria-label="Credly">
+                    <img src="assets/SN/credly.png" alt="Credly" width="40" height="40" />
+                    <span class="sr-only">Credly</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Visitors Analytics Section -->
+        <section id="visits" class="section card visitors-section-with-partial-border" aria-labelledby="visitors-title">
+            <h2 id="visitors-title" class="visitors-title">Visitor radar</h2>
+            <p class="visitors-subtitle">Total visits, countries, and a global activity map.</p>
+            <div class="visitors-grid">
+                <div class="visitors-panel">
+                    <div class="visitors-metric">
+                        <span class="metric-label">Total visitors</span>
+                        <span class="metric-value" data-visitor-total>—</span>
+                    </div>
+                    <div class="visitors-metric">
+                        <span class="metric-label">Your location</span>
+                        <span class="metric-value metric-inline">
+                            <img class="visitor-flag" data-visitor-flag alt="Flag" />
+                            <span data-visitor-country>Detecting...</span>
+                        </span>
+                    </div>
+                    <div class="visitors-metric">
+                        <span class="metric-label">Last update</span>
+                        <span class="metric-value" data-visitor-updated>—</span>
+                    </div>
+                    <div class="visitors-list">
+                        <div class="list-header">Top visiting countries</div>
+                        <ul id="visitor-country-list" class="country-list" role="list"></ul>
+                    </div>
+                </div>
+                <div class="visitors-map-panel">
+                    <div class="map-header">
+                        <span>Global map</span>
+                        <span class="map-legend"><span class="legend-dot"></span>Recent activity</span>
+                    </div>
+                    <div class="map-wrapper">
+                        <svg id="visitor-map-svg" class="visitor-map" viewBox="0 0 900 450" role="img" aria-label="Visitor world map">
+                            <defs>
+                                <linearGradient id="mapGlow" x1="0" x2="1">
+                                    <stop offset="0%" stop-color="#5ad2ff" stop-opacity="0.25" />
+                                    <stop offset="100%" stop-color="#2e73ff" stop-opacity="0.2" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="0" y="0" width="900" height="450" class="map-bg" />
+                            <g id="map-graticule" class="map-graticule"></g>
+                            <g id="map-land" class="map-land"></g>
+                            <g id="map-markers" class="map-markers"></g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="visitors-footer">
+                <span class="api-badge">Powered by Visitor Analytics API</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Julian Cardenas</p>
+    </footer>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
