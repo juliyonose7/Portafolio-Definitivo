@@ -1,93 +1,57 @@
-# 🚀 SOLUCIÓN AL PROBLEMA DE LA API
+# 🚀 API ISSUE RESOLUTION (LEGACY)
 
-## ❌ **Problema Identificado:**
-El error "Failed to fetch" ocurre porque la API REST no está ejecutándose en `http://localhost:3000`.
+## ❌ Identified Issue
+The error “Failed to fetch” occurs when the REST API is not running at `http://localhost:3000`.
 
-## ✅ **SOLUCIÓN INMEDIATA:**
+## ✅ Immediate Fix
 
-### **Opción 1: Usar Base de Datos Local (YA IMPLEMENTADA)**
-He agregado una base de datos local con todas las citas. **¡Tu sitio web YA FUNCIONA!**
+### Option 1: Use Local Data (Legacy Fallback)
+This repository previously included a local fallback dataset for historical quotes. If you re-enable that module, the site will continue to work without the API.
 
-- ✅ Las citas cambiarán cada 30 segundos
-- ✅ 8 autores históricos incluidos
-- ✅ Timer visual funcionando
-- ✅ Botón de refresh manual
+### Option 2: Run the REST API (Recommended)
 
-### **Opción 2: Ejecutar la API REST (Recomendado)**
+#### Step 1: Open Terminal
+- Press `Win + R`
+- Type `cmd` and press Enter
 
-#### **Paso 1: Abrir Terminal**
-- Presiona `Win + R`
-- Escribe `cmd` y presiona Enter
-
-#### **Paso 2: Navegar a la API**
+#### Step 2: Go to the API
 ```cmd
-cd "C:\Users\juliy\OneDrive\Escritorio\New folder\APIREST"
+cd "C:\Users\juliy\OneDrive\Escritorio\Portfolio Definitivo\APIREST"
 ```
 
-#### **Paso 3: Instalar Dependencias**
+#### Step 3: Install Dependencies
 ```cmd
 npm install
 ```
 
-#### **Paso 4: Iniciar Servidor**
+#### Step 4: Start the Server
 ```cmd
 npm start
 ```
 
-#### **Paso 5: Verificar**
-Deberías ver:
+#### Step 5: Verify
+You should see:
 ```
-🚀 Servidor corriendo en http://localhost:3000
-📚 API de Citas Históricas Colombianas v1.0.0
-👥 Autores disponibles: 8
+🚀 Server running at http://localhost:3000
+📚 Historical Quotes API v1.0.0
+👥 Available authors: 8
 ```
 
-## 🔧 **Si Tienes Problemas con PowerShell:**
+## 🔧 PowerShell Notes
 
-### **Usar Command Prompt (cmd) en lugar de PowerShell:**
+### Use Command Prompt (cmd) instead of PowerShell
 1. `Win + R` → `cmd` → Enter
-2. Seguir los pasos anteriores
+2. Follow the steps above
 
-### **O cambiar política de PowerShell:**
+### Or update PowerShell policy
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-## 🎯 **Estado Actual:**
+## ✅ Current Status
+The portfolio now focuses on visitor analytics and a global map. The quotes module is deprecated but can be re-enabled if needed.
 
-### ✅ **FUNCIONANDO AHORA:**
-- ✅ Sitio web con citas históricas
-- ✅ Cambio automático cada 30 segundos
-- ✅ Timer visual con círculo SVG
-- ✅ Botón de refresh manual
-- ✅ Efecto de pista de carros
-- ✅ Material Design completo
-- ✅ Base de datos local como fallback
-
-### 🔄 **Para Activar API REST:**
-- Ejecutar servidor en `localhost:3000`
-- Las citas seguirán funcionando igual
-- Ventaja: más citas disponibles (80 vs 8)
-
-## 📱 **Prueba Tu Sitio Web:**
-
-1. **Abre tu sitio web** en el navegador
-2. **Ve a la sección "Citas Históricas Colombianas"**
-3. **¡Deberías ver las citas cambiando cada 30 segundos!**
-
-## 🆘 **Si Aún No Funciona:**
-
-### **Verificar en Consola del Navegador:**
-1. Presiona `F12`
-2. Ve a la pestaña "Console"
-3. Deberías ver: `"API no disponible, usando base de datos local"`
-
-### **Reiniciar el Sitio:**
-1. Refresca la página (`F5`)
-2. Las citas deberían empezar a cambiar automáticamente
-
----
-
-## 🎉 **¡TU SITIO WEB YA ESTÁ FUNCIONANDO!**
-
-**Las citas históricas colombianas se están mostrando y cambiando cada 30 segundos con el efecto de pista de carros que pediste. ¡Disfruta tu nueva funcionalidad! 🇨🇴✨**
+## 🧪 Quick Test
+1. Open the site in the browser
+2. Open DevTools (`F12`) → Console
+3. Confirm there are no API errors

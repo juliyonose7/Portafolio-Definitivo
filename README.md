@@ -1,27 +1,35 @@
-# Portafolio Aero (Negro/Azul)
+# TRON-Style Portfolio (Black/Blue)
 
-Sitio web moderno tipo portafolio con estética aero negra con acentos azules. Integra la API pública de GitHub para listar repositorios de un usuario.
+Modern personal portfolio with a TRON-inspired UI (dark glassmorphism, neon blue accents). Includes GitHub repo listing and visitor analytics with a global activity map.
 
-## Características
-- UI oscura con vidrio/blur y brillos azules
-- Secciones: Hero, Sobre mí, Habilidades, Proyectos, Contacto
-- Lista repos desde GitHub con filtro por lenguaje
-- Responsive y con mejoras de accesibilidad
+## Features
+- TRON UI with glass/blur and neon gradients
+- Sections: Hero, About, Skills, Projects, Contact
+- GitHub repo list with language filter
+- Visitor analytics: total visits, country breakdown, and world map
+- Responsive layout with accessibility improvements
 
-## Uso
-1. Abre `index.html` en tu navegador.
-2. Opcional: cambia el usuario por defecto en `script.js`:
+## Usage
+1. Open `index.html` in your browser.
+2. Optional: change the default GitHub user in `script.js`:
    ```js
-   const DEFAULT_GITHUB_USER = "tu-usuario";
+   const DEFAULT_GITHUB_USER = "your-user";
    ```
-3. También puedes usar un query param: `index.html?u=usuario`.
+3. You can also use a query parameter: `index.html?u=usuario`.
 
 ## GitHub API
-Se usa `GET https://api.github.com/users/:user/repos?per_page=100&sort=updated`. Para uso básico no requiere token. Para más peticiones, añade un token con el header `Authorization: Bearer <TOKEN>`.
+Uses `GET https://api.github.com/users/:user/repos?per_page=100&sort=updated`. For basic usage, no token is required. For higher rate limits, add `Authorization: Bearer <TOKEN>`.
 
-## Personalización
-- Textos/links en `index.html`
-- Colores en `styles.css` (variables en `:root`)
+## Visitor Analytics APIs
+- **CountAPI** for total/country counters.
+- **ipapi.co** for country/geo lookup.
+- **world-atlas + D3 + TopoJSON** for the global map.
 
-## Licencia
+Configuration is in `api-config.js`.
+
+## Customization
+- Text/links in `index.html` and `index-en.html`
+- Colors in `styles.css` (`:root` variables)
+
+## License
 MIT

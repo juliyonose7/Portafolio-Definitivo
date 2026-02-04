@@ -1,97 +1,75 @@
-# 🚀 Instrucciones para Ejecutar la API de Citas Históricas
+# 🚀 Historical Quotes API - Runbook
 
-## 📋 Pasos para Activar la API
+## 📋 Quick Start
 
-### 1. Abrir Terminal/Consola
-- En Windows: `Win + R` → escribir `cmd` → Enter
-- En Mac: `Cmd + Space` → escribir `Terminal` → Enter
-- En Linux: `Ctrl + Alt + T`
+### 1. Open a Terminal
+- Windows: `Win + R` → type `cmd` → Enter
+- macOS: `Cmd + Space` → type `Terminal` → Enter
+- Linux: `Ctrl + Alt + T`
 
-### 2. Navegar al Directorio de la API
+### 2. Go to the API Folder
 ```bash
-cd "C:\Users\juliy\OneDrive\Escritorio\New folder\APIREST"
+cd "C:\Users\juliy\OneDrive\Escritorio\Portfolio Definitivo\APIREST"
 ```
 
-### 3. Instalar Dependencias
+### 3. Install Dependencies
 ```bash
 npm install
 ```
 
-### 4. Iniciar el Servidor
+### 4. Start the Server
 ```bash
 npm start
 ```
 
-### 5. Verificar que Funciona
-- Deberías ver: `🚀 Servidor corriendo en http://localhost:3000`
-- Abre tu navegador y ve a: `http://localhost:3000`
+### 5. Verify
+- You should see: `🚀 Server running at http://localhost:3000`
+- Open: `http://localhost:3000`
 
-## 🔧 Comandos Alternativos
+## 🔧 Useful Commands
 
-### Para Desarrollo (con auto-reload):
+### Development (auto-reload)
 ```bash
 npm run dev
 ```
 
-### Para Probar la API:
+### API Smoke Test
 ```bash
 node ejemplos.js
 ```
 
-## 🌐 Endpoints Disponibles
+## 🌐 Available Endpoints
 
-Una vez que el servidor esté corriendo, puedes probar estos endpoints:
+- `http://localhost:3000/` - API info
+- `http://localhost:3000/api/autores` - Author list
+- `http://localhost:3000/api/citas/aleatoria` - Random quote
+- `http://localhost:3000/api/autores/gaitan/citas` - Quotes by Gaitán
 
-- `http://localhost:3000/` - Información general
-- `http://localhost:3000/api/autores` - Lista de autores
-- `http://localhost:3000/api/citas/aleatoria` - Cita aleatoria
-- `http://localhost:3000/api/autores/gaitan/citas` - Citas de Gaitán
+## ⚠️ Troubleshooting
 
-## ⚠️ Solución de Problemas
-
-### Si aparece error de puerto ocupado:
-```bash
-# Cambiar puerto en server.js línea 4:
+### Port already in use
+```js
+// Change port in server.js (line 4)
 const PORT = process.env.PORT || 3001;
 ```
 
-### Si no tienes Node.js instalado:
-1. Ve a: https://nodejs.org/
-2. Descarga la versión LTS
-3. Instala siguiendo las instrucciones
-4. Reinicia la terminal
+### Node.js not installed
+1. Go to https://nodejs.org/
+2. Download the LTS version
+3. Install and restart the terminal
 
-### Si npm no funciona:
+### npm issues
 ```bash
-# Verificar instalación de Node.js:
 node --version
 npm --version
 ```
 
-## 🎯 Una Vez que la API Esté Funcionando
-
-1. **Mantén la terminal abierta** (no la cierres)
-2. **Abre tu sitio web** en el navegador
-3. **Ve a la sección "Citas Históricas Colombianas"**
-4. **¡Disfruta las citas que cambian cada 30 segundos!**
-
-## 🔄 Para Detener el Servidor
-
-En la terminal donde está corriendo, presiona:
+## 🔄 Stop the Server
+Press:
 ```
 Ctrl + C
 ```
 
-## 📱 Funcionalidades del Sitio Web
-
-- ✅ **Citas aleatorias** cada 30 segundos
-- ✅ **Timer visual** con círculo de progreso
-- ✅ **Botón de refresh** manual
-- ✅ **Efecto de pista de carros** en el borde
-- ✅ **Material Design** con animaciones
-- ✅ **Responsive** para móviles
-- ✅ **Fallback** si la API no está disponible
-
 ---
 
-**¡Listo! Tu sitio web ahora tiene integración completa con la API REST de citas históricas colombianas! 🇨🇴**
+This API is optional for the portfolio site. It can be used if you re-enable the historical quotes module in the UI.

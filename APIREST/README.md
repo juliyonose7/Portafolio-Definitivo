@@ -1,86 +1,86 @@
-# 📚 API de Citas Históricas Colombianas
+# 📚 Colombian Historical Quotes API
 
-Una API REST que permite acceder a las frases más icónicas de importantes personajes históricos colombianos.
+A REST API that exposes iconic quotes from relevant historical Colombian figures.
 
-## 🎯 Descripción
+## 🎯 Overview
 
-Esta API proporciona acceso programático a citas históricas de personajes emblemáticos de la historia colombiana, incluyendo políticos, héroes de la independencia, científicos y líderes sociales.
+Provides programmatic access to historical quotes from politicians, independence leaders, scientists, and social leaders.
 
-## 👥 Autores Incluidos
+## 👥 Included Authors
 
-- **Jorge Eliécer Gaitán** - Político y líder social
-- **Policarpa Salavarrieta** - Heroína de la independencia
-- **Antonio Nariño** - Prócer de la independencia
-- **Antonio Ricaurte** - Héroe militar
-- **Alexander von Humboldt** - Naturalista y explorador
-- **Antonio José de Sucre** - Gran Mariscal de Ayacucho
-- **José Celestino Mutis** - Científico y botánico
-- **Gustavo Rojas Pinilla** - Presidente de Colombia
+- **Jorge Eliécer Gaitán** - Politician and social leader
+- **Policarpa Salavarrieta** - Independence heroine
+- **Antonio Nariño** - Independence leader
+- **Antonio Ricaurte** - Military hero
+- **Alexander von Humboldt** - Naturalist and explorer
+- **Antonio José de Sucre** - Grand Marshal of Ayacucho
+- **José Celestino Mutis** - Scientist and botanist
+- **Gustavo Rojas Pinilla** - President of Colombia
 
-## 🚀 Instalación y Uso
+## 🚀 Installation & Usage
 
-### Prerrequisitos
-- Node.js (versión 14 o superior)
+### Prerequisites
+- Node.js (v14+)
 - npm
 
-### Instalación
+### Install
 ```bash
-# Clonar o descargar el proyecto
+# Go to the API folder
 cd APIREST
 
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Iniciar el servidor
+# Start the server
 npm start
 
-# Para desarrollo (con auto-reload)
+# Development (auto-reload)
 npm run dev
 ```
 
-### Variables de Entorno
+### Environment Variables
 ```bash
-PORT=3000  # Puerto del servidor (opcional, por defecto 3000)
-NODE_ENV=development  # Entorno de ejecución
+PORT=3000          # Server port (optional, defaults to 3000)
+NODE_ENV=development
 ```
 
-## 📖 Endpoints de la API
+## 📖 API Endpoints
 
 ### Base URL
 ```
 http://localhost:3000
 ```
 
-### 1. Información General
+### 1. API Info
 ```http
 GET /
 ```
-**Descripción:** Información general de la API y endpoints disponibles.
+**Description:** API metadata and available endpoints.
 
-**Respuesta:**
+**Response:**
 ```json
 {
-  "message": "API de Citas Históricas Colombianas",
+  "message": "Colombian Historical Quotes API",
   "version": "1.0.0",
-  "description": "API REST para obtener citas icónicas de personajes históricos colombianos",
+  "description": "REST API to retrieve iconic quotes from Colombian historical figures",
   "endpoints": {
-    "autores": "/api/autores",
-    "citasPorAutor": "/api/autores/:nombre/citas",
-    "citaAleatoria": "/api/citas/aleatoria",
-    "todasLasCitas": "/api/citas",
-    "autorEspecifico": "/api/autores/:nombre"
+    "authors": "/api/autores",
+    "quotesByAuthor": "/api/autores/:nombre/citas",
+    "randomQuote": "/api/citas/aleatoria",
+    "allQuotes": "/api/citas",
+    "author": "/api/autores/:nombre"
   },
-  "autores_disponibles": ["Jorge Eliécer Gaitán", "Policarpa Salavarrieta", ...]
+  "available_authors": ["Jorge Eliécer Gaitán", "Policarpa Salavarrieta", ...]
 }
 ```
 
-### 2. Obtener Todos los Autores
+### 2. List Authors
 ```http
 GET /api/autores
 ```
-**Descripción:** Lista todos los autores disponibles con información básica.
+**Description:** Returns all authors with basic info.
 
-**Respuesta:**
+**Response:**
 ```json
 {
   "success": true,
@@ -88,37 +88,37 @@ GET /api/autores
   "autores": [
     {
       "nombre": "Jorge Eliécer Gaitán",
-      "biografia": "Político y abogado colombiano...",
+      "biografia": "Colombian politician and lawyer...",
       "total_citas": 10,
-      "epoca": "Siglo XX (1903-1948)"
+      "epoca": "20th Century (1903-1948)"
     }
   ]
 }
 ```
 
-### 3. Obtener Autor Específico
+### 3. Get a Specific Author
 ```http
 GET /api/autores/:nombre
 ```
-**Descripción:** Obtiene información completa de un autor específico.
+**Description:** Returns detailed info for a specific author.
 
-**Parámetros:**
-- `nombre`: Nombre del autor (puede ser parcial)
+**Parameters:**
+- `nombre`: Author name (partial match supported)
 
-**Ejemplo:**
+**Example:**
 ```http
 GET /api/autores/gaitan
 GET /api/autores/policarpa
 ```
 
-**Respuesta:**
+**Response:**
 ```json
 {
   "success": true,
   "autor": {
     "nombre": "Jorge Eliécer Gaitán",
-    "biografia": "Político y abogado colombiano...",
-    "epoca": "Siglo XX (1903-1948)",
+    "biografia": "Colombian politician and lawyer...",
+    "epoca": "20th Century (1903-1948)",
     "total_citas": 10,
     "citas": [
       "¡Yo no soy un hombre, soy un pueblo!",
@@ -129,21 +129,21 @@ GET /api/autores/policarpa
 }
 ```
 
-### 4. Obtener Citas de un Autor
+### 4. Quotes by Author
 ```http
 GET /api/autores/:nombre/citas
 ```
-**Descripción:** Obtiene todas las citas de un autor específico.
+**Description:** Returns all quotes for an author.
 
-**Parámetros:**
-- `nombre`: Nombre del autor (puede ser parcial)
+**Parameters:**
+- `nombre`: Author name (partial match supported)
 
-**Ejemplo:**
+**Example:**
 ```http
 GET /api/autores/nariño/citas
 ```
 
-**Respuesta:**
+**Response:**
 ```json
 {
   "success": true,
@@ -157,55 +157,55 @@ GET /api/autores/nariño/citas
 }
 ```
 
-### 5. Cita Aleatoria
+### 5. Random Quote
 ```http
 GET /api/citas/aleatoria
 ```
-**Descripción:** Obtiene una cita aleatoria de cualquier autor.
+**Description:** Returns a random quote from any author.
 
-**Respuesta:**
+**Response:**
 ```json
 {
   "success": true,
   "cita": {
     "autor": "Policarpa Salavarrieta",
     "cita": "¡Pueblo indolente! ¡Cuán distinta sería hoy vuestra suerte si conocierais el precio de la libertad!",
-    "epoca": "Siglo XIX (1795-1817)"
+    "epoca": "19th Century (1795-1817)"
   }
 }
 ```
 
-### 6. Cita Aleatoria de Autor Específico
+### 6. Random Quote by Author
 ```http
 GET /api/citas/aleatoria/:autor
 ```
-**Descripción:** Obtiene una cita aleatoria de un autor específico.
+**Description:** Returns a random quote for a specific author.
 
-**Parámetros:**
-- `autor`: Nombre del autor (puede ser parcial)
+**Parameters:**
+- `autor`: Author name (partial match supported)
 
-**Ejemplo:**
+**Example:**
 ```http
 GET /api/citas/aleatoria/humboldt
 ```
 
-**Respuesta:**
+**Response:**
 ```json
 {
   "success": true,
   "autor": "Alexander von Humboldt",
   "cita": "El conocimiento es la riqueza que se puede transmitir sin empobrecerse.",
-  "epoca": "Siglo XVIII-XIX (1769-1859)"
+  "epoca": "18th-19th Century (1769-1859)"
 }
 ```
 
-### 7. Todas las Citas
+### 7. All Quotes
 ```http
 GET /api/citas
 ```
-**Descripción:** Obtiene todas las citas de todos los autores.
+**Description:** Returns all quotes from all authors.
 
-**Respuesta:**
+**Response:**
 ```json
 {
   "success": true,
@@ -214,50 +214,50 @@ GET /api/citas
     {
       "autor": "Jorge Eliécer Gaitán",
       "cita": "¡Yo no soy un hombre, soy un pueblo!",
-      "epoca": "Siglo XX (1903-1948)"
+      "epoca": "20th Century (1903-1948)"
     },
     ...
   ]
 }
 ```
 
-## 🔧 Códigos de Estado HTTP
+## 🔧 HTTP Status Codes
 
-- `200 OK`: Solicitud exitosa
-- `404 Not Found`: Recurso no encontrado
-- `500 Internal Server Error`: Error interno del servidor
+- `200 OK`: Success
+- `404 Not Found`: Resource not found
+- `500 Internal Server Error`: Server error
 
-## 📝 Formato de Respuesta
+## 📝 Response Format
 
-Todas las respuestas siguen el siguiente formato:
+All responses follow this structure:
 
 ```json
 {
   "success": true|false,
-  "message": "Mensaje descriptivo (en caso de error)",
-  "data": "Datos específicos del endpoint"
+  "message": "Descriptive message (on error)",
+  "data": "Endpoint-specific payload"
 }
 ```
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Tech Stack
 
-- **Node.js**: Runtime de JavaScript
-- **Express.js**: Framework web para Node.js
-- **CORS**: Middleware para manejo de CORS
-- **Helmet**: Middleware de seguridad
-- **JSON**: Base de datos de citas
+- **Node.js**: JavaScript runtime
+- **Express.js**: Web framework
+- **CORS**: CORS middleware
+- **Helmet**: Security headers
+- **JSON**: Quotes dataset
 
-## 🔒 Seguridad
+## 🔒 Security
 
-- CORS habilitado para todas las rutas
-- Helmet configurado para headers de seguridad
-- Validación de entrada en todos los endpoints
-- Manejo de errores centralizado
+- CORS enabled on all routes
+- Helmet configured for secure headers
+- Input validation on all endpoints
+- Centralized error handling
 
-## 📊 Estadísticas
+## 📊 Stats
 
-- **8 autores** históricos colombianos
-- **80 citas** icónicas en total
+- **8 authors**
+- **80 quotes** total
 - **10 citas** por autor en promedio
 - Cobertura desde el siglo XVIII hasta el siglo XX
 
